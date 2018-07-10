@@ -1,8 +1,8 @@
 * Binaural Room Impulse Response measurements Sonic Epistemologies
 
-2016-01-10/11 hek basel
-2016-01-2x postpro rumori
-2016-01-31 readme
+2016-01-10/11 hek basel,
+2016-01-2x postpro rumori,
+2016-01-31 readme,
 2018-07 revised
 
 ** Measurement layout
@@ -151,7 +151,7 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 *** Post-production
 
 - deconvolution of measurements using ~aliki-convol~
-  + se_*_a_* *: 4 seconds duration (longer reverb tail)
+  + se_*_a_* * :: 4 seconds duration (longer reverb tail)
   + others :: 2 seconds duration
 - export impulse responses using ~aliki-export~ (raw stage)
 - merge se_*_c_*_t1 (1–12) and _t2 (13–14) to _t1 (1–14)
@@ -201,6 +201,7 @@ $ for mic in kk dpa ortf; do for pos in a b c d e; \
   ../se_${mic}_${pos}_000_t1.conf; \
   done; done
 #+END_EXAMPLE
+
 - generate confs for single mic types, mic pos a, t2 and t5
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; do for take in t2 t5; \
@@ -209,6 +210,7 @@ $ for mic in kk dpa ortf; do for take in t2 t5; \
   ../se_${mic}_a_000_${take}.conf; \
   done; done
 #+END_EXAMPLE
+
 - generate conf for single mic types, mic pos d, t1, all 4 angles
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
@@ -222,8 +224,8 @@ $ for mic in kk dpa ortf; do cnt=2; for angle in 090 180 270; do \
   >> ../se_${mic}_d_xxx_t1.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-  + manually edit files: extend to 8 output channels, remove superfluous # EOFs
-  (proper automatic generation not possible with current genjconv.sh)
+- manually edit files: extend to 8 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
+
 - generate conf for single mic types, all mic pos, t1
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
@@ -237,8 +239,8 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t1.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-  + manually edit files: extend to 10 output channels, remove superfluous # EOFs
-  (proper automatic generation not possible with current genjconv.sh)
+- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
+
 - same (single mic types, all mic pos) with t2 at pos a (t1 for other pos)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
@@ -252,8 +254,8 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t2.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-  + manually edit files: extend to 10 output channels, remove superfluous # EOFs
-  (proper automatic generation not possible with current genjconv.sh)
+- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
+
 - same (single mic types, all mic pos) with t5 at pos a (t1 for other pos)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
@@ -267,6 +269,5 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t5.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-  + manually edit files: extend to 10 output channels, remove superfluous # EOFs
-  (proper automatic generation not possible with current genjconv.sh)
+- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 
