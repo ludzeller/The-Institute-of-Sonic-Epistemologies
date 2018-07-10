@@ -1,9 +1,6 @@
 * Binaural Room Impulse Response measurements Sonic Epistemologies
 
-2016-01-10/11 hek basel,
-2016-01-2x postpro rumori,
-2016-01-31 readme,
-2018-07 revised
+/2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07 revised/
 
 ** Measurement layout
 
@@ -13,7 +10,7 @@
 3 microphone pairs (kk, dpa, ortf)
 #+END_EXAMPLE
 
-[[../installation_overview.pdf][Floor plan]]
+[[file:ise_floor_plan.svg][Floor plan]]
 
 Find detailed information below under [[#measurement_procedure]].
 
