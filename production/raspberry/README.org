@@ -1,0 +1,38 @@
+* Institute of Sonic Epistemologies Implementation Memo
+
+2016-04 rumori
+revised 2018-07 rumori
+
+** standard raspbian install via NOOBS 1.9.0
+** performed standard apt-get upgrade
+** installed extra packages
+   - mplayer
+   - mg (lightweight emacs-like editor)
+** copied script sonic_epist.sh to raspberry
+** GPIO pins: 15 for playback control, 3 for shutdown/poweroff, active_low
+
+#+BEGIN_EXAMPLE
+Raspberry GPIO (B and later models)
+
+5V  5V  GND 14  15  18  GND 23  24  GND 25  8   7
+3V3 2   3   4   GND 17  27  22  3V3 10  9   11  GND
+
+        ^        ^
+        poweroff playback
+#+END_EXAMPLE
+
+** script argument for indicating scene:
+
+#+BEGIN_EXAMPLE
+$ ./sonic_epist.sh A
+#+END_EXAMPLE
+
+** for track name body edit =$TRACK= variable in sonic_epist.sh
+
+** autostart via /etc/rc.local on raspberry:
+
+#+BEGIN_EXAMPLE
+# start installation sonic epistemologies
+sudo -u pi -b /home/pi/sonic_epist/hack/sonic_epist.sh [SCENE]
+#+END_EXAMPLE
+
