@@ -15,7 +15,7 @@
 
 [[../installation_overview.pdf][Floor plan]]
 
-Find detailed information below under [[Measurement procedure]].
+Find detailed information below under [[#measurement_procedure]].
 
 ** Jconvolver usage
 
@@ -33,7 +33,7 @@ $ jconvolver -M -V -N <name> jconvolver/<config-file>
 
 A collection of configuration files for Jconvolver is provided in the ~jconvolver~ subdirectory using different combinations of the measured impulse responses.
 
-- naming scheme follows the measurement nomenclature described under [[Measurement procedure]]
+- naming scheme follows the measurement nomenclature described under [[#measurement_procedure]]
 - configurations are related to irdb_44 subdirectory
 - if jconvolver is called from a different path or 48k is to be used, the ~/cd ./irdb_44~ directive in the files should be adjusted
 
@@ -58,7 +58,9 @@ A collection of configuration files for Jconvolver is provided in the ~jconvolve
 *** All configurations are also available for dpa mic (_dpa_) and ortf mics (_ortf_)
 
 ** Measurement procedure
-<<Measurement procedure>>
+   :PROPERTIES:
+   :CUSTOM_ID: measurement_procedure
+   :END:
 
 /measurements: 2016-01-10/11 hek basel, postpro: 2016-01-2x rumori/
 
@@ -212,6 +214,7 @@ $ for mic in kk dpa ortf; do for take in t2 t5; \
 #+END_EXAMPLE
 
 - generate conf for single mic types, mic pos d, t1, all 4 angles
+  + manually edit files: extend to 8 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
   do ls se_${mic}_d_000_t1_*.wav | \
@@ -224,9 +227,9 @@ $ for mic in kk dpa ortf; do cnt=2; for angle in 090 180 270; do \
   >> ../se_${mic}_d_xxx_t1.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-- manually edit files: extend to 8 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 
 - generate conf for single mic types, all mic pos, t1
+  + manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
   do ls se_${mic}_a_000_t1_*.wav | \
@@ -239,9 +242,9 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t1.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 
 - same (single mic types, all mic pos) with t2 at pos a (t1 for other pos)
+  + manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
   do ls se_${mic}_a_000_t2_*.wav | \
@@ -254,9 +257,9 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t2.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 
 - same (single mic types, all mic pos) with t5 at pos a (t1 for other pos)
+  + manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
 #+BEGIN_EXAMPLE
 $ for mic in kk dpa ortf; \
   do ls se_${mic}_a_000_t5_*.wav | \
@@ -269,5 +272,3 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t5.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
-- manually edit files: extend to 10 output channels, remove superfluous # EOFs (proper automatic generation not possible with current genjconv.sh)
-
