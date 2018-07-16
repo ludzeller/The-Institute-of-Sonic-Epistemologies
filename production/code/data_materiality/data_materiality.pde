@@ -126,7 +126,7 @@ void createMinim() {
 }
 
 void draw() {
-  println(frameRate);
+  //println(frameRate);
   background(0);
 
   handleControl();
