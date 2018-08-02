@@ -26,9 +26,9 @@ Raspberry GPIO (B and later models)
 $ ./sonic_epist.sh A
 #+END_EXAMPLE
 
-- for track name body edit =$TRACK= variable in sonic_epist.sh
+- for track name body edit =$TRACK= variable in [[file:sonic_epist.sh]]
 
-- autostart via /etc/rc.local on raspberry:
+- autostart via =/etc/rc.local= on raspberry:
 
 #+BEGIN_EXAMPLE
 # start installation sonic epistemologies
