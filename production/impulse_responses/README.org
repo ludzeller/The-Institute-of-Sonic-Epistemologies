@@ -10,7 +10,8 @@
 3 microphone pairs (kk, dpa, ortf)
 #+END_EXAMPLE
 
-[[file:ise_floor_plan.svg][Floor plan]]
+# [[file:ise_floor_plan.svg][Floor plan]]
+#+HTML: <img src="ise_floor_plan.svg" alt="Installation floor plan" width="640" />
 
 Find detailed information below under [[#measurement_procedure]].
 
@@ -108,6 +109,10 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 - 9–10 :: Neumann KH 120
 - 11–12 :: Eve SC 205
 - 13–14 :: Kling+Freitag PA hek (+ K&F subs for some takes)
+
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_speakersetup.jpg]]
+#+HTML: <img src="ise_measurements_speakersetup.jpg" alt="Measurement loudspeaker setup" width="640" />
 
 *** Measurement setup
 
