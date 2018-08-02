@@ -97,7 +97,7 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 - dpa :: DPA 4060 on temples of Soundman dummy head, no caps (flat mic response)
 - ortf :: 2* Suter C-3 (from hek) in quasi-ORTF configuration
 
-[[file:ise_measurements_micsetup.jpg]]
+<img src="ise_measurements_micsetup.jpg" alt="Measurement microphone setup" width="640">
 
 *** Loudspeakers
 
