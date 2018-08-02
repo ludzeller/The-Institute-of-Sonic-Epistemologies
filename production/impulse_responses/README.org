@@ -12,7 +12,7 @@
 
 [[file:ise_floor_plan.svg][Floor plan]]
 
-Find detailed information below under [[#measurement_procedure]].
+Find detailed information below under [[#measurement_procedure][Measurement procedure]].
 
 ** Jconvolver usage
 
@@ -30,7 +30,7 @@ $ jconvolver -M -V -N <name> jconvolver/<config-file>
 
 A collection of configuration files for Jconvolver is provided in the ~jconvolver~ subdirectory using different combinations of the measured impulse responses.
 
-- naming scheme follows the measurement nomenclature described under [[#measurement_procedure]]
+- naming scheme follows the measurement nomenclature described under [[#measurement_procedure][Measurement procedure]]
 - configurations are related to irdb_44 subdirectory
 - if jconvolver is called from a different path or 48k is to be used, the ~/cd ./irdb_44~ directive in the files should be adjusted
 
@@ -58,6 +58,8 @@ A collection of configuration files for Jconvolver is provided in the ~jconvolve
    :PROPERTIES:
    :CUSTOM_ID: measurement_procedure
    :END:
+
+#+HTML: <a href="#measurement_procedure" />
 
 /measurements: 2016-01-10/11 hek basel, postpro: 2016-01-2x rumori/
 
