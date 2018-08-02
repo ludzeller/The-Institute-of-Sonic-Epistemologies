@@ -10,7 +10,7 @@
 3 microphone pairs (kk, dpa, ortf)
 #+END_EXAMPLE
 
-[[file:ise_floor_plan.svg]]
+[[file:ise_floor_plan.svg][Floor plan]]
 
 Find detailed information below under [[#measurement_procedure]].
 
@@ -96,6 +96,9 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 - kk :: Soundman dummy head w/ DPA 4060 at ear canal, no caps (flat mic response)
 - dpa :: DPA 4060 on temples of Soundman dummy head, no caps (flat mic response)
 - ortf :: 2* Suter C-3 (from hek) in quasi-ORTF configuration
+
+#+ATTR_HTML: :width 640
+[[file:ise_measurements_micsetup.jpg]]
 
 *** Loudspeakers
 
