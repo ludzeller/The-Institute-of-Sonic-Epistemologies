@@ -10,8 +10,7 @@
 3 microphone pairs (kk, dpa, ortf)
 #+END_EXAMPLE
 
-# [[file:ise_floor_plan.svg][Floor plan]]
-#+HTML: <img src="ise_floor_plan.svg" alt="Installation floor plan" width="640" />
+[[file:ise_floor_plan.svg][Floor plan]]
 
 Find detailed information below under [[#measurement_procedure]].
 
