@@ -59,7 +59,7 @@ A collection of configuration files for Jconvolver is provided in the ~jconvolve
    :CUSTOM_ID: measurement_procedure
    :END:
 
-#+HTML: <a href="#measurement_procedure" />
+#+HTML: <a name="measurement_procedure" />
 
 /measurements: 2016-01-10/11 hek basel, postpro: 2016-01-2x rumori/
 
