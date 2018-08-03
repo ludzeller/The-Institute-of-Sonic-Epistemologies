@@ -4,7 +4,9 @@ Production notes and materials of a binaural sound installation by Ludwig Zeller
 
 ** Video
 
-[[https://vimeo.com/238382412][[[ise_title.png]]]]
+#+HTML: <a href="https://vimeo.com/238382412">
+[[ise_title.png]]
+#+HTML: </a>
 
 ** Online Simulator
 
