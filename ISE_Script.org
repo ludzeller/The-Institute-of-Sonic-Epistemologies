@@ -1,0 +1,353 @@
+#+TITLE: Institute of Sonic Epistemologies (Script)
+#+AUTHOR: Ludwig Zeller
+#+EMAIL: ludwig.zeller@fhnw.ch
+
+** Scene 1
+
+
+- Background ::
+  - Studierende tauschen sich vor dem Seminar aus, auch auf Deutsch, wird dann leiser und hört auf
+  - Schrittgeräusche im Seminarraum /(on-site binaural?)/
+
+- Instructor :: /eher laut/
+  - Welcome everybody, my name is Peter Hartweiler. I will be your workshop leader this week. We will be using a teampad to organise us during the workshop, I just sent the link and login information around via email, so please open it up. By the way, does anybody still need access to the wifi? If you come from other schools you can use eduroam. If you can't use that please let me know and we will get you a ticket for the week from our IT helpdesk.
+  - Today we will start with some hearing exercises, then we will have some historical examples of sonic epistemologies and after that you will be working on a practical brief for the rest of today and maybe also tomorrow morning, depending on how far we come.
+  - Ok, so you will receive sound kits that you can use over the course of the workshop, but you have to return them afterwards. In your kit you will find an embedded sound processor with interface, headphones, a little desktop monitor speaker and all the cables that you need. You might have to install a driver if you are not working on Linux. We have a repository online for this, here, I paste the URL and the login data in our teampad. The kits are limited so I would like to ask you to work in groups. It's easier anyways for getting started, especially for people who don't have a lot of technical experience. Ok, so please form groups, come in front to pickup your kits and choose your tables.
+
+- Background ::
+  - Studierende formen Gruppen
+  - Stühle rutschen
+  - Sachen fallen zu Boden
+  - Schrittgeräusche /(on-site binaural?)/
+  - Schritte im Treppenhaus /(on-site binaural)/
+
+- Head of Institute ::
+  - Ohhh, have you been waiting already? Sorry, I have been kept in a conversation…
+  - So, I am glad you could make it, welcome at the Institute of Sonic Epistemologies. Did you have a nice trip and find it well? … Great. So, I am sure you want to learn something about our work now, right?
+  - Our academic core context is design and media studies, but we have many interferences with economics, math, engineering, physics and the digital humanities. The centre of our expertise lies in tactile and acoustic analysis methods with a focus on both application orientation and practice-based foundational research. We project quantifiable and high-dimensional problems to acoustic models for the purpose of data exploration and analysis. Our specialisation lies in the detective's art of recognising correlations in complex data sets that purely visual or automatic approaches usually fail to detect.
+  - This can be applied for the evaluation of empirical sets from Big Data contexts such as social user tracking and recorded consumer patterns for weak signal detection. But also material science, prototype evaluation and astro physics benefit from our work. You see, it's really diverse...
+  - We even started to collaborate with literature scientists for quantified analytics in the digital humanities in the form of discourse analyses. For instance we scan for the introduction and establishment of certain expressions and thought patterns in science and culture.
+
+And, yeah, besides this focus on research and evaluation methodologies
+we are also involved in the development of new solutions for digital
+signal processing and physical problem modelling. This is research
+agenda is completed by the development of new experimental sonic and
+tactile hardware interfaces.
+
+So, we are standing in front of our event space where currently a
+workshop with external students is running. We can have a quick look, if
+we are quite. Shall we go?
+
+/*Szene 2*/
+
+*Instructor:*
+
+/- Eher laut -/
+
+Ok, has everybody powered up their sound interface? Please don't put on
+the headphones just yet, I need to give you some more explanations...
+The device is running on an embedded system. Most control is achieved
+via the interactive braille matrix, but sighted can also attach a screen
+and a normal keyboard in case they can't read braille. By the way, is
+anybody sighted of you?
+
+*Student:*
+
+- Räusper -
+
+Yes, I am sighted, but I know my way around in Braille, so I guess I'm
+fine.
+
+*Instructor:*
+
+Ok, that makes it a lot easier. The workflow is a lot smoother if you
+just work with the Braille interface without switching to the GUI
+environment. It also runs much faster of course.
+
+And please don't turn up the volume of the loudspeaker too much, ok? I
+mean we are a small group but quickly it's just impossible to work.
+You'd be better off if you use headphones. The interface has four
+connectors with adjustable volumes.
+
+Ok, let's start with some generic hearing exercises. These are important
+to train your hearing and to expand your sensitivity to small details
+within sounds.
+
+You will be passed through a number of tests that will measure and train
+how well you resolve sound events. Please open up the file
+SyntheticTest1 from our shared folder with the “load project” command in
+the second row... In this test a sine wave will alternate between two
+pitches that increasingly come closer to each other over time, up to the
+point where they cannot be told apart anymore... That will sound like
+this:
+
+SOUND EXCERPT (placed on PA)
+
+Listen to it and press the left-most button on your interface as soon as
+you can't hear their difference anymore. The test will run in several
+variations of pitches and speeds and after it's finished, you will be
+shown a performance score. There are also three more tests with
+different challenges if you want to practice at home.
+
+*Studis:*
+
+- Geräusche von rutschenden Stühlen
+
+- Kopfhörer werden eingesteckt
+
+- Interface, Box und Kopfhörer werden auf Tische gelegt und verrutscht
+
+- Bisschen Gemurmel, “was sollen wir machen“, “wo ist die Datei“,
+“junge, junge, gar nicht so einfach”...
+
+- Studis ermahnen sich zur Ruhe
+
+- Sound sweeps fangen an
+
+*Head of Institute:*
+
+/- Leise / flüsternd -/
+
+This is a typical practice-based seminar at our institute. While our
+institute is of course open for everybody, the visually impaired show a
+special talent for making the best use of tactile and acoustic
+epistemologies. From the beginning on our course was especially popular
+for blind people, making up approximately 80% of the enrolled students.
+
+These numbers have to be placed in relation to the overall situation for
+the visually impaired: The average percentage of blind students in
+academia is just about 0.4% (!), due to the problems that a mostly
+visual knowledge culture necessarily yields for them. While they are
+eligible for benefits such as paid transcription assistants and free
+braille hardware, the visual bias is just too hard to overcome in most
+cases, making it hard for them to participate in academia. But at our
+institute the sighted are the minority!
+
+But it has to be added that blind students that make it to graduation
+usually show a strong competence in self management and a remarkable
+resilience. Usually they choose to specialise thoroughly within their
+fields in order to compete against their sighted colleagues and
+therefore our offerings at the institute are an attractive and unique
+feature for the visually impaired entering the job market.
+
+/* Szene 3*/
+
+*Background*
+
+- Man hört für ca. 15 Sekunden Sound Design
+
+- Man hört geringe Raschelaktivität im Seminar
+
+- Man hört ca. 12 leise Schallquellen, phasenverschoben, an
+unterschiedlichen Orten im Raum
+
+- Bearbeiten synthetische Höraufgaben am Tisch
+
+*Instructor:*
+
+Ok, is everybody done? You can also do the exercises at home if you
+want.
+
+Let's continue with some historical back drop.
+
+- Of course our work has a lineage. For instance auscultation and
+  percussion as examination methods in medicine - that a doctor can
+  apply without needing more than his hands and a stethoscope (!) - had
+  been invented by René Laënnec around 1800.
+- 
+- But the cultural technique of computational data analysis started in
+  the 1940ies. The computers back then used mechanical relays as
+  processors. These emitted sound, which gave a valuable feedback to the
+  engineers and users about the state of the program execution.
+- 
+- That sounded like this...
+
+- 
+- SOUND EXCERPT, play back via PA
+
+- 
+- When the relays were replaced by transistors in the following decade,
+  the sound of the machines vanished but with it also sonic feedback was
+  gone. Therefore, electromagnetic pickups were used to pass the
+  electronic activity of the machines on to loudspeakers. Here I've got
+  some recordings of this on my computer... must be somewhere... bare
+  with me... there...
+- 
+
+- SOUND EXCERPT, play back via PA
+- 
+- People thought this epistemic practice would vanish, when the first
+  visual computer systems and more complex operating systems came up,
+  but it didn't. While the mainstream of computing culture was visual,
+  there was a vivid niche that addressed the sonic qualities of
+  computing and especially the interaction with machines.
+- 
+- From the beginning this was driven by many visually impaired pioneers,
+  that felt left out by sight-based academia and developed their own
+  tools and sonic operating systems with audible and tangible user
+  interfaces in competition to the graphical user interfaces of the
+  sighted masses.
+- 
+- They even created special-made circuits for physical modelling. This
+  was rather hacky back then and used a combination of digital and
+  analog techniques. For instance the “Sound Cube 512” acoustic expander
+  developed by Vasili Morojeff around 1985 used a 3D matrix of 8x8x8
+  grid nodes connected with metal springs that could be reconfigured
+  electronically in order to change their sonic characteristics. This
+  was one of the direct predecessors of the finite element models that
+  we use in our sonic analysis tools today.
+- 
+- I've got one here, it doesn't work anymore since some parts in the
+  driver module broke and even if it worked it would be hard to
+  interface it with today's computers of course... But here I can of
+  course excite the system by hand... there is still a data matrix
+  loaded into the grid of springs, it's a non volatile analog memory...
+  here, let me amplify it with the microphone... yes, thats better...
+  there are some noticeable clusters in this set, can you hear?
+- 
+
+- SOUND EXCERPT
+
+- 
+- I got this from a friend who bought it second hand so we don't know
+  which data it holds and who used it before.
+- 
+- This sonic practice was small and ignored for many years, but then a
+  historical event took place. John Adrian who worked at Goldman Sachs
+  as a visually impaired data analyst at the beginning of the 1990ies
+  happened to be connected with this grass-roots garage scene in
+  California. Adrian was trained in traditional data analytics but saw
+  the potential of the emerging sonic epistemologies and proposed to
+  found a research centre within his corporation. He happened to receive
+  the funding for an initial 3 years contract and got in a couple of
+  friends that worked in the same field.
+- 
+
+- The visually dominated market did not demand more than CD quality
+  reproduction of sound and so the improvements in sound processors was
+  stalled for many years already. They had to improvise to get hold of
+  enough computing power for their visions and what they came up with
+  was very clever: they hi-jacked the emerging parallel computing power
+  of *graphics* cards and applied it to their sonic research!
+- 
+- When real-time acoustic raytracing became available the golden era
+  began. What was bound to 512 nodes before in the 1980ies and therefore
+  was rather a proof of concept than a real application was freed from
+  its limits. All of a sudden the data analysts could model problems
+  with millions and even billions of data points and apply realistic
+  acoustics and physics to it in real-time. All this was made possible
+  through hardware advances for video games and 3D visual effects in
+  cinema.
+- 
+- More and more sonic data analysts appeared in documentaries and news
+  reports and therefore working in sonic epistemologies became known and
+  attractive. But most of them are visually impaired. Not that the
+  sighted would not be interested in this work, but the blind outperform
+  them.
+- 
+
+/*Szene 4*/
+
+*Instructor:*
+
+Ok, now we are working on some real-world briefs.
+
+/Data can be represented as a material sonification, and this is the
+foundational principle of most data analytics that we are working on.
+Imagine a three-dimensional space that is filled with a material, but
+not in a homogeneous way, but with areas of varying density and even
+holes. /
+
+We remodel this materiality in digital space according to physical
+simulations and excite this algorithmic space in order to understand the
+structure of the volume and therefore the structure of the data set.
+That's why it's called epistemic acoustics, we use sound to find
+something out.
+
+This can be compared to many, many practices in the physical world. For
+instance if you want to examine the healthiness of a tree, looking for
+empty spaces behind walls, rust in a car and even to assess the ripeness
+of a cheese wheel... It's a simple but powerful principle, you knock on
+the surface of a volume in order to find something out about its inside.
+
+But in our case, we map high dimensional data sets into a simulated
+materiality, which allows you not only to hear variations in density,
+but many different qualities at once and to correlate them with each
+other.
+
+Ok, let's jump right into an applied example. Please load up the file
+RealWorldExample1. You will find a data set from a car insurance
+company. The set contains one million archived accidents. Your brief is
+to develop recommendations on how to improve the insurance plans of the
+company. All data is of course anonymised for educational purpose.
+
+The set is quite thorough... it features many aspects such as the age of
+the driver, the hour of the day it occured, the involved cars, alcohol
+and drug test results, geography, etc. Use your interface to create
+different correlations of the available parameters and experiment with
+them.
+
+For instance there... we can hear the driver's age in correlation to the
+speed of the accident... You can clearly hear how there is more density
+in the area that represents the younger drivers... Can you hear, if I
+pluck the system down there... compared to the areas over here... like
+this... can you hear?
+
+SOUND EXCERPT
+
+Ok, now it's your turn. I will come to your desk one after the other to
+discuss what you came up with. Let me know if you need help.
+
+*Background*
+
+- Studi Gespräche
+
+- Bewegungen
+
+One hour later
+
+*Fade out...*
+
+*Fade in...*
+
+A plethora of strange percussive sound designs and voices comes from the
+space.
+
+*Instructor:*
+
+So, how is it going here?
+
+*Student:*
+
+Good, thanks, we are trying to show a correlation between the
+creditworthiness of a driver and the average damage expenses that have
+to be compensated.
+
+*Instructor:*
+
+Nice! Can I listen to it?
+
+*Student:*
+
+Sure, I'll put it on the speakers, hang on...
+
+*Background*
+
+- reaching for some control elements, some buttons click
+
+SOUND EXCERPT
+
+*Instructor:*
+
+Very interesting... I think there is definitely a connection between
+both... Especially down there, at the very low end... Can I try...
+Thanks. Like, there... it sounds very dense. There is a lot of
+interferences happening, while at the other end of the range it seems
+quite transparent. I think you should zoom into this interesting bit
+there and work out the details!
+
+*Student:*
+
+Cool, thank you. Will let you know when I am done.
+
+
