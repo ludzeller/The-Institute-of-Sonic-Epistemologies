@@ -36,6 +36,7 @@ In total, 70 binaural stereo impulse response pairs have been measured, organise
 
 Find detailed information below under [[#measurement_procedure][Measurement procedure]].
 
+#+HTML: <a name="jconvolver" />
 ** Jconvolver configuration files
 
 A collection of configuration files for Jconvolver is provided in the ~jconvolver~ subdirectory using different combinations of the measured impulse responses.
