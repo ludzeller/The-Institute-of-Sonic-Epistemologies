@@ -4,20 +4,25 @@
 
 ** Overview/Contents
 
-#+TOC
+#+TOC: headlines 1
 
 ** Description
 
 Binaural Room Impulse Responses (BRIR) were captured in the exhibition venue using the dummy head /John/ by Soundman, which has been also used for the binaural recordings.  The head was equipped with a pair of /DPA 4060/ miniature microphones at the entrance of the ear canals.  A second pair of /DPA 4060/ microphones were attached to the temples of the dummy head, providing an alternative set of impulse responses that are more compatible for loudspeaker reproduction.  Additionally, two /Suter C-3/ microphones in a quasi-ORTF setup yielded a third set of impulse responses.  The latter two sets were measured with potential future applications in mind and were not used for the production described here.
 
-Measurements were performed according to the swept sine method [[1]].  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring (see [[floor plan]]).  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom).
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_micsetup.jpg]]
+#+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
+
+Measurements were performed according to the swept sine method ([[#Farina_2000][Farina 2000]]).  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring (see [[floor plan]]).  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom).
+
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_speakersetup.jpg]]
+#+HTML: <img src="ise_measurements_speakersetup.jpg" alt="Measurement loudspeaker setup" width="640" />
 
 With one exception, each source location was equipped with a dedicated loudspeaker.  Thus, all impulse responses for a certain listening position could be captured in one automated series of measurements without the need of repositioning speakers intermediately.  Only source locations 12 and 13 shared the same speaker, which therefore had to be moved once after having measured listening position A since in the other scenes (B–E) location 13 is never used.
 
-In total, 70 binaural stereo impulse response pairs have been measured, organised in a matrix of 14 source locations by 5 listening positions.  The measurements were carried out using a customised version of the libre software package Aliki (see [[2]] for a description of customisations). The automated process was adopted from earlier projects with one of the authors’ involvement, including the post-processing toolchain.
-
-[[1]] Farina
-[[2]] Rumori & Hollerweger, 2012
+In total, 70 binaural stereo impulse response pairs have been measured, organised in a matrix of 14 source locations by 5 listening positions.  The measurements were carried out using a customised version of the libre software package Aliki (see [[#HollerwegerRumori_2013][Hollerweger & Rumori 2013]] for a description of customisations). The automated process was adopted from earlier projects with one of the authors’ involvement, including the post-processing toolchain.
 
 ** Measurement layout
 
@@ -116,10 +121,6 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 - dpa :: DPA 4060 on temples of Soundman dummy head, no caps (flat mic response)
 - ortf :: 2* Suter C-3 (from hek) in quasi-ORTF configuration
 
-# #+ATTR_HTML: :width 640
-# [[file:ise_measurements_micsetup.jpg]]
-#+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
-
 *** Loudspeakers
 
 - 1–6 :: Yamaha MSP-5 (from hek)
@@ -127,10 +128,6 @@ Example filename: ~se_kk_b_000_t1_001.wav~
 - 9–10 :: Neumann KH 120
 - 11–12 :: Eve SC 205
 - 13–14 :: Kling+Freitag PA hek (+ K&F subs for some takes)
-
-# #+ATTR_HTML: :width 640
-# [[file:ise_measurements_speakersetup.jpg]]
-#+HTML: <img src="ise_measurements_speakersetup.jpg" alt="Measurement loudspeaker setup" width="640" />
 
 *** Measurement setup
 
@@ -296,3 +293,11 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t5.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
+
+** References
+
+#+HTML: <a name="Farina_2000" />
+- Farina 2000 :: Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique.  AES Preprint 5093.
+#+HTML: <a name="HollerwegerRumori_2013" />
+- Hollerweger & Rumori 2013 :: Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132
+
