@@ -4,15 +4,15 @@
 
 ** Scene 1
 
-
 - Background ::
   - Studierende tauschen sich vor dem Seminar aus, auch auf Deutsch, wird dann leiser und hört auf
   - Schrittgeräusche im Seminarraum /(on-site binaural?)/
 
 - Instructor :: /eher laut/
-  - Welcome everybody, my name is Peter Hartweiler. I will be your workshop leader this week. We will be using a teampad to organise us during the workshop, I just sent the link and login information around via email, so please open it up. By the way, does anybody still need access to the wifi? If you come from other schools you can use eduroam. If you can't use that please let me know and we will get you a ticket for the week from our IT helpdesk.
-  - Today we will start with some hearing exercises, then we will have some historical examples of sonic epistemologies and after that you will be working on a practical brief for the rest of today and maybe also tomorrow morning, depending on how far we come.
-  - Ok, so you will receive sound kits that you can use over the course of the workshop, but you have to return them afterwards. In your kit you will find an embedded sound processor with interface, headphones, a little desktop monitor speaker and all the cables that you need. You might have to install a driver if you are not working on Linux. We have a repository online for this, here, I paste the URL and the login data in our teampad. The kits are limited so I would like to ask you to work in groups. It's easier anyways for getting started, especially for people who don't have a lot of technical experience. Ok, so please form groups, come in front to pickup your kits and choose your tables.
+
+  Welcome everybody, my name is Peter Hartweiler. I will be your workshop leader this week. We will be using a teampad to organise us during the workshop, I just sent the link and login information around via email, so please open it up. By the way, does anybody still need access to the wifi? If you come from other schools you can use eduroam. If you can't use that please let me know and we will get you a ticket for the week from our IT helpdesk.
+  Today we will start with some hearing exercises, then we will have some historical examples of sonic epistemologies and after that you will be working on a practical brief for the rest of today and maybe also tomorrow morning, depending on how far we come.
+  Ok, so you will receive sound kits that you can use over the course of the workshop, but you have to return them afterwards. In your kit you will find an embedded sound processor with interface, headphones, a little desktop monitor speaker and all the cables that you need. You might have to install a driver if you are not working on Linux. We have a repository online for this, here, I paste the URL and the login data in our teampad. The kits are limited so I would like to ask you to work in groups. It's easier anyways for getting started, especially for people who don't have a lot of technical experience. Ok, so please form groups, come in front to pickup your kits and choose your tables.
 
 - Background ::
   - Studierende formen Gruppen
