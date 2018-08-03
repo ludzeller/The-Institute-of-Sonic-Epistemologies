@@ -1,6 +1,23 @@
-* Binaural Room Impulse Response measurements Sonic Epistemologies
+* Binaural Room Impulse Response measurements for Sonic Epistemologies
 
-/2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07 revised/
+/2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07/08 revised/
+
+** Overview/Contents
+
+#+TOC
+
+** Description
+
+Binaural Room Impulse Responses (BRIR) were captured in the exhibition venue using the dummy head /John/ by Soundman, which has been also used for the binaural recordings.  The head was equipped with a pair of /DPA 4060/ miniature microphones at the entrance of the ear canals.  A second pair of /DPA 4060/ microphones were attached to the temples of the dummy head, providing an alternative set of impulse responses that are more compatible for loudspeaker reproduction.  Additionally, two /Suter C-3/ microphones in a quasi-ORTF setup yielded a third set of impulse responses.  The latter two sets were measured with potential future applications in mind and were not used for the production described here.
+
+Measurements were performed according to the swept sine method [[1]].  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring (see [[floor plan]]).  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom).
+
+With one exception, each source location was equipped with a dedicated loudspeaker.  Thus, all impulse responses for a certain listening position could be captured in one automated series of measurements without the need of repositioning speakers intermediately.  Only source locations 12 and 13 shared the same speaker, which therefore had to be moved once after having measured listening position A since in the other scenes (B–E) location 13 is never used.
+
+In total, 70 binaural stereo impulse response pairs have been measured, organised in a matrix of 14 source locations by 5 listening positions.  The measurements were carried out using a customised version of the libre software package Aliki (see [[2]] for a description of customisations). The automated process was adopted from earlier projects with one of the authors’ involvement, including the post-processing toolchain.
+
+[[1]] Farina
+[[2]] Rumori & Hollerweger, 2012
 
 ** Measurement layout
 
