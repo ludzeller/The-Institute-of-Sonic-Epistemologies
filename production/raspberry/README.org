@@ -4,11 +4,9 @@
 
 ** Hardware/software setup
 
-Playback to the suspended headphones is realised using Raspberry Pi [fn:1] computers. They are complemented by a switch mechanism and an external USB audio interface, which also allows for a comfortable volume control. The switch is activated by lifting, that is, putting on the headphones such that the suspension strings are untensioned. In idle state, the freely hanging headphones deactivate the switch by their own weight. The switch is connected to one of the Raspberry’s GPIO (General Purpose Input/Outout) ports. 
+Playback to the suspended headphones is realised using Raspberry Pi computers. They are complemented by a switch mechanism and an external USB audio interface, which also allows for a comfortable volume control. The switch is activated by lifting, that is, putting on the headphones such that the suspension strings are untensioned. In idle state, the freely hanging headphones deactivate the switch by their own weight. The switch is connected to one of the Raspberry’s /GPIO/ (General Purpose Input/Output) ports. 
 
 The playback is controlled by a simple shell script that invokes an instance of =mplayer= on switch activation. After having released the headphone, the =mplayer= process is stopped after a few seconds if still running. Unlike a constantly looping playback, the switch makes sure that each augmented scene is listened to from its beginning when visitors change from one position to the next. 
-
-[fn:1] http://www.raspberrypi.org
 
 ** Raspberry setup log
 
