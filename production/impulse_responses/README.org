@@ -1,4 +1,4 @@
-* Binaural Room Impulse Response measurements for Sonic Epistemologies
+#+TITLE: Binaural Room Impulse Response measurements for Sonic Epistemologies
 
 /2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07/08 revised/
 
@@ -36,18 +36,6 @@ In total, 70 binaural stereo impulse response pairs have been measured, organise
 
 Find detailed information below under [[#measurement_procedure][Measurement procedure]].
 
-** Jconvolver usage
-
-Jconvolver is a high performance convolution engine by Fons Adriaensen.  It is especially suited for larger convolution matrices of long impulse responses (e.g., room impulse responses).  Jconvolver can be found at [[http://kokkinizita.linuxaudio.org/linuxaudio/index.html]].
-
-#+BEGIN_EXAMPLE
-$ cd .../impulse_responses
-$ jconvolver -M -V -N <name> jconvolver/<config-file>
-#+END_EXAMPLE
-
-- -M -V : optimisation flags
-- -N <name> can be used to assign jack name (useful if multiple convolvers used)
-
 ** Jconvolver configuration files
 
 A collection of configuration files for Jconvolver is provided in the ~jconvolver~ subdirectory using different combinations of the measured impulse responses.
@@ -75,6 +63,7 @@ A collection of configuration files for Jconvolver is provided in the ~jconvolve
 - e.g. se_kk_d_xxx_t1.conf
 
 *** All configurations are also available for dpa mic (_dpa_) and ortf mics (_ortf_)
+
 
 ** Measurement procedure
    :PROPERTIES:
@@ -297,7 +286,7 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
 ** References
 
 #+HTML: <a name="Farina_2000" />
-- Farina 2000 :: Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique.  AES Preprint 5093.
+- Farina 2000 :: Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique, AES Preprint 5093.
 #+HTML: <a name="HollerwegerRumori_2013" />
-- Hollerweger & Rumori 2013 :: Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132
+- Hollerweger & Rumori 2013 :: Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132.
 
