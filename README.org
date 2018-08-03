@@ -4,9 +4,7 @@ Production notes and materials of a binaural sound installation by Ludwig Zeller
 
 ** Video
 
-#+HTML: <a href="https://vimeo.com/238382412">
-[[ise_title.png]]
-#+HTML: </a>
+#+HTML: <a href="https://vimeo.com/238382412"><img src="ise_title.png" alt="The Institute of Sonic Epistemologies video title" width="640" /></a>
 
 ** Online Simulator
 
