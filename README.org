@@ -33,9 +33,13 @@ E) On the left boundary of the classroom facing backwards into the room. A stude
 
 This repository provides public information about the production steps that we took in order to create this site-specific, binaural sound installation. Furthermore, the IR impulses of the basement of HEK Basel and all source codes involved in the creation of the fictional sounds are also included and explained in this repository. It is intended as a starting point for further explorations and is therefore released open-source. 
 
-The subfolders carry individual README files with further directions:
+Some subfolders carry individual README files with further directions:
 
-[[][]]
+[[file:deploy/binaural_tracks][deploy/binaural_tracks]] The finished binaural scenes as FLAC files
+[[file:deploy/online_simulator][deploy/online_simulator]] Code of the interactive floor plan
+[[file:production/impulse_responses][production/impulse_responses]] The IR-based sound production process
+[[file:production/raspberry][production/raspberry]] The self-resetting players used in the exhibition
+[[file:production/sonifications][production/sonifications]] The fictive and factual sonifications used in the narrative
 
 
 
