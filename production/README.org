@@ -12,9 +12,9 @@ For /The Institute of Sonic Epistemologies,/ this on-site approach has been only
 
 *** Binaural rendering
 
-For binaural on-site recording of the entire narrative, all speakers of the protagonists would have needed to travel to Basle, although not necessarily at the same time: multiple binaural tracks may be recorded in an iterative process and mixed later, provided that their temporal structure matches and the dummy head remains at exactly the same position.  As this was not feasible for this project, most of the elements were produced by binaural rendering.
+For binaural on-site recording of the entire narrative, all speakers of the protagonists would have needed to travel to HEK Basel, although not necessarily at the same time: multiple binaural tracks may be recorded in an iterative process and mixed later, provided that their temporal structure matches and the dummy head remains at exactly the same position.  As this was not feasible for this project, most of the elements were produced by binaural rendering.
 
-Specific scene elements that correspond to a certain, single location were recorded separately and processed using impulse responses. This applies mainly to the protagonists’ voices, which were recorded in a studio in Cologne, and the presented sonification examples, which have been synthesised.  The basic scene elements are so-called free-field material, that is, they do not contain any spatial information such as reverberation or direction.  Spatial cues have been added later by the binaural rendering process.
+Specific scene elements that correspond to a certain, single location were recorded separately and processed using impulse responses. This applies mainly to the protagonists’ voices, which were recorded at the Academy of Media Arts in Cologne, and the presented sonification examples, which have been synthesised.  The basic scene elements are so-called free-field material, that is, they do not contain any spatial information such as reverberation or direction.  Spatial cues have been added later by the binaural rendering process.
 
 Binaural rendering has been performed using Binaural Room Impulse Responses /BRIR)/ that were measured in the exhibition venue.  Hence, the impulse responses also contain the reverberation of the space which matches that of the direct recordings.  The measurements were carried out at the intended listening locations, each for a number of sound source positions. Similar to binaural recording, the spatial constellations of listeners and sound sources were retained in the measurements according to the needs of the play.
 
@@ -43,5 +43,23 @@ $ jconvolver -M -V -N <name> jconvolver/<config-file>
 
 Several configuration files for use with the measured impulse responses are provided and explained in [[impulse_responses#jconvolver][Impulse responses]].
 
-** Sonification examples
+** Sound design and sonifications
+
+- Scene B, listening training, Processing sketch
+- Scene C
+1'00'' - 3'00'' Shintaro Algorhytmics (http://shintaro-miyazaki.com/)
+4'00'' - 5'20'' data materiality
+- Scene D / E
+Freesound / CatArt
+
+CataRT (Real-Time Corpus-Based Concatenative Synthesis)
+http://imtr.ircam.fr/imtr/CataRT
+ by Diemo Schwarz
+
+
+Miyazaki, S. (2013). Algorhythmisiert. Eine Medienarchäologie digitaler Signale und ( un ) erhörter Effekte. Berlin: Kadmos Kulturverlag, p. 84ff.
+
+
+
+
 

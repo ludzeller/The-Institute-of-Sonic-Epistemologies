@@ -1,0 +1,7 @@
+#+TITLE: Sound design notes of Sonic Epistemologies
+
+Besides recorded sounds (i.e. voices and noises) the project also makes use of synthesised sounds that have been freshly created or have been used from historic sources. 
+
+** Synthesised sounds
+
+The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tool written in Processing/Java using the Minim library.
