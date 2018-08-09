@@ -1,11 +1,37 @@
 #+TITLE: The Institute of Sonic Epistemologies
 
-Production notes and materials of a binaural sound installation by Ludwig Zeller and Martin Rumori
+Production notes and materials of a site-specific, binaural sound installation by [[http://www.ludwigzeller.de/projects/the-institute-of-sonic-epistemologies/][Ludwig Zeller]] (HGK Basel) and [[http://www.rumori.de/][Martin Rumori]] (Kunstuniversität Graz). The project is part of the IXDM research project “[[https://www.ixdm.ch/portfolio/experimental-data-aesthetics/][Experimental Data Aesthetics]]”.
 
-** Video
+** About the project
 
 #+HTML: <a href="https://vimeo.com/238382412"><img src="ise_title.png" alt="The Institute of Sonic Epistemologies video title" width="640" /></a>
 
-** Online Simulator
+Our project ‘The Institute of Sonic Epistemologies’ is a Speculative Design project that explores ways of immersion within non-existing life-worlds with a central focus on sound. Conceptually, it explores the idea that our visual ways of knowledge creation might only have gained their dominance due to processes of socialisation. The project is thus based on the following, speculative questions: What if visual strategies lost their dominance in scientific data analysis? And what if visually impaired people could therefore catch up with the non-blind in future information societies? 
+
+The projects departs from two notions of sonic epistemologies: Firstly, a utilitarian perspective on sound that is common in scientific data sonification and interaction design. In this regards, sound is appreciated for its specific capacity to inform insights in complex analytics that could benefit from its specific forms of aesthetics disclosure. And secondly, sound is understood from a fictional perspective as a way of relating to existing life-world experiences and transcending them by the means of multi-sensory storytelling. In regards to the latter, the project aims at exploring ways of seamlessly layering a fictive space on top of a physical space.
+
+The fictional aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of [[http://rixc.org/en/acousticspace/][Acoustic Space Journal]].
+
+
+*** Interactive floor plan 
 
 Link to Gitlab pages
+
+
+** About this repository
+
+This repository provides public information about the production steps that we took in order to create this site-specific, binaural sound installation. Furthermore, the IR impulses of the basement of HEK Basel and all source codes involved in the creation of the fictional sounds are also included and explained in this repository. It is intended as a starting point for further explorations and is therefore released open-source. 
+
+The subfolders carry individual README files with further directions.
+
+
+
+
+
+
+
+
+
+
+
+
