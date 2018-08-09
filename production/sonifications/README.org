@@ -4,7 +4,7 @@ Besides recorded sounds (i.e. voices and noises) the project also makes use of s
 
 ** Fictive sounds and sonifications
 
-The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tiny tool written in Processing/Java using the Minim library. 
+#+HTML: <a href="https://vimeo.com/284228026"><img src="materiality_of_data.jpg" alt="The Institute of Sonic Epistemologies: simulation of data materiality" width="640" /></a>
 
 The sounds of the fictive sonification device discussed and presented in scene C (~ 4'00'' - 5'20'') have also been created using Processing and Minim in addition to the Fisica library, a Processing wrapper of JBox2D. The code is available in the folder [[file:materiality_of_data][materiality_of_data]] and offers a sine wave swarm synth based on a network of simulated mechanical springs. The tool allows for the flexible configuration of simulated network. 
 
@@ -47,6 +47,7 @@ EXITOR
 
 The sonification sounds heard in scene D and E have been created using the [[http://imtr.ircam.fr/imtr/CataRT][CatArt]] (Real-Time Corpus-Based Concatenative Synthesis) tool by IRCAM. Recordings of physically excited objects have been used as source material, chopped into grains and sorted according to their spectral brightness and loudness. 
 
+The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tiny tool written in Processing/Java using the Minim library. 
 
 ** Factual/historic sonifications
 
