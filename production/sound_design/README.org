@@ -4,4 +4,51 @@ Besides recorded sounds (i.e. voices and noises) the project also makes use of s
 
 ** Synthesised sounds
 
-The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tool written in Processing/Java using the Minim library.
+The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tiny tool written in Processing/Java using the Minim library. 
+
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_micsetup.jpg]]
+#+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
+
+The sounds of the fictive sonification device discussed and presented in scene C (~ 4'00'' - 5'20'') have also been created using Processing and Minim in addition to the Fisica library, a Processing wrapper of JBox2D. The code is available in the folder [[file:materiality_of_data][materiality_of_data]] and offers a sine wave swarm synth based on a network of simulated mechanical springs. The tool allows for the configuration of arbitrary nodes and sonifies how their connections change in length. Various parameters can be adjusted in real-time using the following commands:
+
+#+BEGIN_EXAMPLE
+ADD NODES  
+- add dynamic nodes: press 'a' and click left
+- add static nodes: press 'f' and click left
+- adjust ball size: press 'u' and move mouse horizontally
+
+LINK NODES
+- link nodes: press 's' and click several nodes
+- connect neighbouring nodes: press 'n'
+- connect neighbour nodes to static anchors: press 'm'
+
+RANDOMIZE
+- randomize: press 'r'
+- adjust amount of generated nodes: press 'z' and move mouse horizontally
+- adjust auto-link probability: press 't' and move mouse horizontally
+
+REMOVE
+- remove single nodes: press 'd' and click left on nodes
+- reset everything: press 'c'
+
+PHYSICS
+- adjust spring damping: press 'w' and move mouse horizontally
+- adjust spring frequency: press '1' and move mouse horizontally
+- adjust spring length: press 'e' and move mouse horizontally
+- trigger showing of physics parameters: press 'h'
+
+EXITOR
+- excite single nodes by mouse-dragging them 
+- excite network around mouse cursor: press 'x'
+- adjust excitation range: press 'i' and move mouse horizontally
+- adjust excitation power: press 'o' and move mouse horizontally
+#+END_EXAMPLE
+
+The sonification sounds heard in scene D and E have been created using the [[http://imtr.ircam.fr/imtr/CataRT][CatArt]] (Real-Time Corpus-Based Concatenative Synthesis) tool by IRCAM. Recordings of physically excited objects have been used as source material, chopped into grains and sorted according to their spectral brightness and loudness. 
+
+
+** Example of historic sonifications
+
+The historic sonification examples in scene C (~ 1'00'' - 3'00'') are factually existing sounds of algorithmic sonifications recorded by W. Nijenhuis at Philips in Eindhoven while working on the "PASCAL" computer in the early 1960s. A media historic discussion of this can be found in Miyazaki, S. (2013). Algorhythmisiert. Eine Medienarchäologie digitaler Signale und (un)erhörter Effekte. Berlin: Kadmos Kulturverlag, p. 84ff.
+
