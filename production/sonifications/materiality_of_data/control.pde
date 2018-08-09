@@ -100,7 +100,8 @@ void handleControl() {
     }
 
     if (key == 'c') {
-      reset();
+      world.setGravity( 0, 0 ) ;
+      clear();
     }
 
     if (key == 'x') {
@@ -120,9 +121,14 @@ void mouseReleased() {
   mouseReleased = true;
 }
 
+void clear(){
+  resetWorld();
+  resetMinim();
+}
+
 void keyPressed() {
   if (key == 'r') {
-    reset();
+    clear();
     randomize();
   }
 

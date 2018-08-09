@@ -38,7 +38,7 @@ ADD NODES
 LINK NODES
 - link nodes: press 's' and click several nodes
 - connect neighbouring nodes: press 'n'
-- connect neighbour nodes to static anchors: press 'm'
+- connect neighbouring nodes to static anchors: press 'm'
 
 RANDOMIZE
 - randomize: press 'r'
@@ -51,7 +51,7 @@ REMOVE
 
 PHYSICS
 - adjust spring damping: press 'w' and move mouse horizontally
-- adjust spring frequency: press '1' and move mouse horizontally
+- adjust spring frequency: press 'q' and move mouse horizontally
 - adjust spring length: press 'e' and move mouse horizontally
 - trigger showing of physics parameters: press 'h'
 
@@ -115,7 +115,7 @@ void setup() {
   balls = new ArrayList<Node>();  
 
   createMinim();
-  reset();
+  resetWorld();
 }
 
 void createMinim() {
@@ -123,6 +123,12 @@ void createMinim() {
   minim = new Minim(this);
   //minim.debugOn();
   out = minim.getLineOut(Minim.STEREO, 2048);
+}
+
+void resetMinim() {
+  minim.stop();
+  minim = null;
+  createMinim();
 }
 
 void draw() {

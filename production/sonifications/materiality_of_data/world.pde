@@ -1,5 +1,5 @@
 
-void reset() {
+void resetWorld() {
   
   world.clear();
   

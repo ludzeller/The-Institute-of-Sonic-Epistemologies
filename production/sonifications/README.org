@@ -8,7 +8,7 @@ The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B h
 
 The sounds of the fictive sonification device discussed and presented in scene C (~ 4'00'' - 5'20'') have also been created using Processing and Minim in addition to the Fisica library, a Processing wrapper of JBox2D. The code is available in the folder [[file:materiality_of_data][materiality_of_data]] and offers a sine wave swarm synth based on a network of simulated mechanical springs. The tool allows for the flexible configuration of simulated network. 
 
-The connections between the nodes are decorated with one sine wave oscillator each that together sum up as additive textures of spring sounds. The volume and pitch of these connections is influenced by the velocity of their change of length. Stereo panorama is mapped according to their horizontal position on screen.
+Each dynamic node is decorated with one sine wave oscillator that together sum up as an additive swarm sound, at times resembling mechanical springs. The volume and pitch of these connections is influenced by their velocity. The stereo panorama is mapped according to their horizontal position on screen.
 
 Various parameters of the physical simulation can be adjusted in real-time using the following commands:
 
