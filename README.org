@@ -33,7 +33,9 @@ E) On the left boundary of the classroom facing backwards into the room. A stude
 
 This repository provides public information about the production steps that we took in order to create this site-specific, binaural sound installation. Furthermore, the IR impulses of the basement of HEK Basel and all source codes involved in the creation of the fictional sounds are also included and explained in this repository. It is intended as a starting point for further explorations and is therefore released open-source. 
 
-The subfolders carry individual README files with further directions.
+The subfolders carry individual README files with further directions:
+
+[[][]]
 
 
 
