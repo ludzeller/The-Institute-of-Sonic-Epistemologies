@@ -5,10 +5,10 @@
 ** Scene 1
 
 - /Background/ ::
-  - Studierende tauschen sich vor dem Seminar aus, auch auf Deutsch, wird dann leiser und hört auf
-  - Schrittgeräusche im Seminarraum /(on-site binaural?)/
+  - Students chat shortly before the seminar starts, mixed languages, getting more quite towards the end
+  - Stepping sounds within the seminar room
 
-- Instructor :: /eher laut/
+- Instructor ::
 
   Welcome everybody, my name is Peter Hartweiler. I will be your workshop leader this week. We will be using a teampad to organise us during the workshop, I just sent the link and login information around via email, so please open it up. By the way, does anybody still need access to the wifi? If you come from other schools you can use eduroam. If you can't use that please let me know and we will get you a ticket for the week from our IT helpdesk.
 
@@ -17,11 +17,10 @@
   Ok, so you will receive sound kits that you can use over the course of the workshop, but you have to return them afterwards. In your kit you will find an embedded sound processor with interface, headphones, a little desktop monitor speaker and all the cables that you need. You might have to install a driver if you are not working on Linux. We have a repository online for this, here, I paste the URL and the login data in our teampad. The kits are limited so I would like to ask you to work in groups. It's easier anyways for getting started, especially for people who don't have a lot of technical experience. Ok, so please form groups, come in front to pickup your kits and choose your tables.
 
 - /Background/ ::
-  - Studierende formen Gruppen
-  - Stühle rutschen
-  - Sachen fallen zu Boden
-  - Schrittgeräusche /(on-site binaural?)/
-  - Schritte im Treppenhaus /(on-site binaural)/
+  - Sstudents form groups
+  - Chairs are being moved
+  - Some things drop to the floor
+  - Stepping sounds in the seminar room
 
 - Head of Institute ::
 
@@ -41,11 +40,11 @@
 
 ** Scene 2
 
-- Instructor :: /eher laut/
+- Instructor ::
 
   Ok, has everybody powered up their sound interface? Please don't put on the headphones just yet, I need to give you some more explanations… The device is running on an embedded system. Most control is achieved via the interactive braille matrix, but sighted can also attach a screen and a normal keyboard in case they can't read braille. By the way, is anybody sighted of you?
 
-- Student :: /räusper/
+- Student ::
 
   Yes, I am sighted, but I know my way around in Braille, so I guess I'm fine.
 
@@ -65,14 +64,13 @@
 
 - /Students/ ::
 
-  - Geräusche von rutschenden Stühlen
-  - Kopfhörer werden eingesteckt
-  - Interface, Box und Kopfhörer werden auf Tische gelegt und verrutscht
-  - Bisschen Gemurmel, “was sollen wir machen“, “wo ist die Datei“, “junge, junge, gar nicht so einfach”…
-  - Studis ermahnen sich zur Ruhe
-  - Sound sweeps fangen an
+  - Sounds of chairs moving
+  - Headphones and other electronic gear are being set up
+  - Diffuse conversations about how to start the exercise
+  - Students ask some others to be quiter
+  - Sound sweeps begin
 
-- Head of Institute :: /leise/flüsternd/
+- Head of Institute :: /whispering/
 
   This is a typical practice-based seminar at our institute. While our institute is of course open for everybody, the visually impaired show a special talent for making the best use of tactile and acoustic epistemologies. From the beginning on our course was especially popular for blind people, making up approximately 80% of the enrolled students.
 
@@ -83,10 +81,9 @@
 ** Scene 3
 
 - /Background/ ::
-  - Man hört für ca. 15 Sekunden Sound Design
-  - Man hört geringe Raschelaktivität im Seminar
-  - Man hört ca. 12 leise Schallquellen, phasenverschoben, an unterschiedlichen Orten im Raum
-  - Bearbeiten synthetische Höraufgaben am Tisch
+  - Diverse sonifications audible from several locations for some 15 seconds, one after the other
+  - Diverse activities audible 
+  - Students working on exercises at tables
 
 - Instructor ::
 
@@ -151,8 +148,7 @@
   Ok, now it's your turn. I will come to your desk one after the other to discuss what you came up with. Let me know if you need help.
 
 - /Background/ ::
-  - Studi Gespräche
-  - Bewegungen
+  - Students chatting and moving
 
 - /One hour later/ ::
   - *Fade out…*
