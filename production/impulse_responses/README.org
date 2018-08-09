@@ -1,6 +1,28 @@
-* Binaural Room Impulse Response measurements Sonic Epistemologies
+#+TITLE: Binaural Room Impulse Response measurements for Sonic Epistemologies
 
-/2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07 revised/
+/2016-01-10/11 hek basel, 2016-01-2x postpro rumori, 2016-01-31 readme, 2018-07/08 revised/
+
+** Overview/Contents
+
+#+TOC: headlines 1
+
+** Description
+
+Binaural Room Impulse Responses (BRIR) were captured in the exhibition venue using the dummy head /John/ by Soundman, which has been also used for the binaural recordings.  The head was equipped with a pair of /DPA 4060/ miniature microphones at the entrance of the ear canals.  A second pair of /DPA 4060/ microphones were attached to the temples of the dummy head, providing an alternative set of impulse responses that are more compatible for loudspeaker reproduction.  Additionally, two /Suter C-3/ microphones in a quasi-ORTF setup yielded a third set of impulse responses.  The latter two sets were measured with potential future applications in mind and were not used for the production described here.
+
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_micsetup.jpg]]
+#+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
+
+Measurements were performed according to the swept sine method ([[#Farina_2000][Farina 2000]]).  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring (see [[floor plan]]).  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom).
+
+# #+ATTR_HTML: :width 640
+# [[file:ise_measurements_speakersetup.jpg]]
+#+HTML: <img src="ise_measurements_speakersetup.jpg" alt="Measurement loudspeaker setup" width="640" />
+
+With one exception, each source location was equipped with a dedicated loudspeaker.  Thus, all impulse responses for a certain listening position could be captured in one automated series of measurements without the need of repositioning speakers intermediately.  Only source locations 12 and 13 shared the same speaker, which therefore had to be moved once after having measured listening position A since in the other scenes (B–E) location 13 is never used.
+
+In total, 70 binaural stereo impulse response pairs have been measured, organised in a matrix of 14 source locations by 5 listening positions.  The measurements were carried out using a customised version of the libre software package Aliki (see [[#HollerwegerRumori_2013][Hollerweger & Rumori 2013]] for a description of customisations). The automated process was adopted from earlier projects with one of the authors’ involvement, including the post-processing toolchain.
 
 ** Measurement layout
 
@@ -12,25 +34,14 @@
 
 [[file:ise_floor_plan.svg][Floor plan]]
 
-Find detailed information below under [[#measurement_procedure]].
+Find detailed information below under [[#measurement_procedure][Measurement procedure]].
 
-** Jconvolver usage
-
-Jconvolver is a high performance convolution engine by Fons Adriaensen.  It is especially suited for larger convolution matrices of long impulse responses (e.g., room impulse responses).  Jconvolver can be found at [[http://kokkinizita.linuxaudio.org/linuxaudio/index.html]].
-
-#+BEGIN_EXAMPLE
-$ cd .../impulse_responses
-$ jconvolver -M -V -N <name> jconvolver/<config-file>
-#+END_EXAMPLE
-
-- -M -V : optimisation flags
-- -N <name> can be used to assign jack name (useful if multiple convolvers used)
-
+#+HTML: <a name="jconvolver" />
 ** Jconvolver configuration files
 
 A collection of configuration files for Jconvolver is provided in the ~jconvolver~ subdirectory using different combinations of the measured impulse responses.
 
-- naming scheme follows the measurement nomenclature described under [[#measurement_procedure]]
+- naming scheme follows the measurement nomenclature described under [[#measurement_procedure][Measurement procedure]]
 - configurations are related to irdb_44 subdirectory
 - if jconvolver is called from a different path or 48k is to be used, the ~/cd ./irdb_44~ directive in the files should be adjusted
 
@@ -54,10 +65,13 @@ A collection of configuration files for Jconvolver is provided in the ~jconvolve
 
 *** All configurations are also available for dpa mic (_dpa_) and ortf mics (_ortf_)
 
+
 ** Measurement procedure
    :PROPERTIES:
    :CUSTOM_ID: measurement_procedure
    :END:
+
+#+HTML: <a name="measurement_procedure" />
 
 /measurements: 2016-01-10/11 hek basel, postpro: 2016-01-2x rumori/
 
@@ -269,3 +283,11 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
   >> ../se_${mic}_x_000_t5.conf; cnt=$((cnt+2)); \
   done; done
 #+END_EXAMPLE
+
+** References
+
+#+HTML: <a name="Farina_2000" />
+- Farina 2000 :: Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique, AES Preprint 5093.
+#+HTML: <a name="HollerwegerRumori_2013" />
+- Hollerweger & Rumori 2013 :: Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132.
+

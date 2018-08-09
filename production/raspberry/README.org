@@ -1,15 +1,22 @@
-* Institute of Sonic Epistemologies Implementation Memo
+* Raspberry based playback devices for Sonic Epistemologies
 
-2016-04 rumori
-revised 2018-07 rumori
+/2016-04, revised 2018-07 rumori/
 
-** standard raspbian install via NOOBS 1.9.0
-** performed standard apt-get upgrade
-** installed extra packages
-   - mplayer
-   - mg (lightweight emacs-like editor)
-** copied script sonic_epist.sh to raspberry
-** GPIO pins: 15 for playback control, 3 for shutdown/poweroff, active_low
+** Hardware/software setup
+
+Playback to the suspended headphones is realised using Raspberry Pi computers. They are complemented by a switch mechanism and an external USB audio interface, which also allows for a comfortable volume control. The switch is activated by lifting, that is, putting on the headphones such that the suspension strings are untensioned. In idle state, the freely hanging headphones deactivate the switch by their own weight. The switch is connected to one of the Raspberry’s /GPIO/ (General Purpose Input/Output) ports. 
+
+The playback is controlled by a simple shell script that invokes an instance of =mplayer= on switch activation. After having released the headphone, the =mplayer= process is stopped after a few seconds if still running. Unlike a constantly looping playback, the switch makes sure that each augmented scene is listened to from its beginning when visitors change from one position to the next. 
+
+** Raspberry setup log
+
+- standard raspbian install via NOOBS 1.9.0
+- performed standard apt-get upgrade
+- installed extra packages
+  + mplayer
+  + mg (lightweight emacs-like editor)
++ copied script [[file:sonic_epist.sh]] to raspberry
++ GPIO pins: 15 for playback control, 3 for shutdown/poweroff, active_low:
 
 #+BEGIN_EXAMPLE
 Raspberry GPIO (B and later models)
@@ -21,15 +28,15 @@ Raspberry GPIO (B and later models)
         poweroff playback
 #+END_EXAMPLE
 
-** script argument for indicating scene:
+- script argument for indicating scene:
 
 #+BEGIN_EXAMPLE
 $ ./sonic_epist.sh A
 #+END_EXAMPLE
 
-** for track name body edit =$TRACK= variable in sonic_epist.sh
+- for track name body edit =$TRACK= variable in [[file:sonic_epist.sh]]
 
-** autostart via /etc/rc.local on raspberry:
+- autostart via =/etc/rc.local= on raspberry:
 
 #+BEGIN_EXAMPLE
 # start installation sonic epistemologies

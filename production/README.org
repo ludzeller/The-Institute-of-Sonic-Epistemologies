@@ -1,0 +1,47 @@
+#+TITLE: Production notes of Sonic Epistemologies
+
+** Binaural audio
+
+There are two major ways to produce binaural audio signals containing head-related spatial listening cues: either by recording using a dummy head microphone or binaural (in-ear) microphones, or by adding such spatial cues to preferably anechoic source material subsequently, which is done by convolution with head-related impulse responses /(binaural rendering)./  For the production of /The Institute of Sonic Epistemologies/ both approaches were combined.
+
+*** Binaural recording
+
+A dummy head microphone has been placed at the five intended listening locations sequentially.  For this method of production, the narrative scenes have to be staged in the exhibition space for direct recording.  In fact, this is the way many binaural radio plays were produced and partially still are today (see [[http://www.v-erdacht.de][(V)erdacht]] for an example).
+
+For /The Institute of Sonic Epistemologies,/ this on-site approach has been only used for spatially more complex but temporally less critical sonic elements, such as the ambience or most of the noises caused by the students when clearing the space.  Moving sounds have been recorded the same way, for example, the approaching steps in the staircase appearing in the first scene. 
+
+*** Binaural rendering
+
+For binaural on-site recording of the entire narrative, all speakers of the protagonists would have needed to travel to Basle, although not necessarily at the same time: multiple binaural tracks may be recorded in an iterative process and mixed later, provided that their temporal structure matches and the dummy head remains at exactly the same position.  As this was not feasible for this project, most of the elements were produced by binaural rendering.
+
+Specific scene elements that correspond to a certain, single location were recorded separately and processed using impulse responses. This applies mainly to the protagonists’ voices, which were recorded in a studio in Cologne, and the presented sonification examples, which have been synthesised.  The basic scene elements are so-called free-field material, that is, they do not contain any spatial information such as reverberation or direction.  Spatial cues have been added later by the binaural rendering process.
+
+Binaural rendering has been performed using Binaural Room Impulse Responses /BRIR)/ that were measured in the exhibition venue.  Hence, the impulse responses also contain the reverberation of the space which matches that of the direct recordings.  The measurements were carried out at the intended listening locations, each for a number of sound source positions. Similar to binaural recording, the spatial constellations of listeners and sound sources were retained in the measurements according to the needs of the play.
+
+The impulse response measurement procedure is described in detail in the sub-directory [[file:impulse_responses][impulse_responses]].
+
+** Mixing and rendering 
+
+The binaural tracks representing the augmented scenes have been arranged and mixed using /Ableton Live./  Recorded binaural stereo material such as the ambience could be mixed directly to the master bus, involving some post-processing such as filtering and compression.
+
+The elements for each of the virtual sound locations such as the voice recordings and sonification examples were arranged in one or more mono tracks and mixed to a single-channel signal per source location.  These mono signals were routed to a multichannel convolution engine that used the measured impulse response matrix for the respective listening position (see [[#jconvolver][Jconvolver]] below).  The convolution matrix provided 14 input channels for the source positions and 2 output channels per listening position for the resulting binaural signal. The binaural output was then routed to the master bus and superimposed to the directly recorded binaural material.  For convenience, the processing power of the computer allowed for convolving the signals for all listening positions /at the same time,/ involving the full matrix with 10 channels of convolution outputs which were routed to 5 master busses.  Like this, each of the narrative scenes could also be heard as it would sound from the other four listening positions, although conceptually each situation was conceived for only one location.
+
+#+HTML: <a name="jconvolver" />
+*** Jconvolver
+ 
+For the convolution the realtime engine [[http://kokkinizita.linuxaudio.org/linuxaudio/index.html][Jconvolver]] by Fons Adriaensen has been used, which is libre and open source software.  It provides a very high performance especially for a large number of longer impulse responses, as is the case with room impulse responses, and it allows for an arbitrary matrix of convolutions.  Since Jconvolver is a command-line based standalone software and not a plugin, it was connected to Live via the Jack Audio Connection Kit.
+
+Jconcolver is invoked like this:
+
+#+BEGIN_EXAMPLE
+$ cd .../impulse_responses
+$ jconvolver -M -V -N <name> jconvolver/<config-file>
+#+END_EXAMPLE
+
+- -M -V : optimisation flags
+- -N <name> can be used to assign jack name (useful if multiple convolvers used)
+
+Several configuration files for use with the measured impulse responses are provided and explained in [[impulse_responses#jconvolver][Impulse responses]].
+
+** Sonification examples
+

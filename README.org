@@ -1,0 +1,11 @@
+#+TITLE: The Institute of Sonic Epistemologies
+
+Production notes and materials of a binaural sound installation by Ludwig Zeller and Martin Rumori
+
+** Video
+
+#+HTML: <a href="https://vimeo.com/238382412"><img src="ise_title.png" alt="The Institute of Sonic Epistemologies video title" width="640" /></a>
+
+** Online Simulator
+
+Link to Gitlab pages
