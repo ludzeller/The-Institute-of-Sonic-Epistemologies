@@ -35,11 +35,11 @@ This repository provides public information about the production steps that we t
 
 Some subfolders carry individual README files with further directions:
 
-[[file:deploy/binaural_tracks][deploy/binaural_tracks]] The finished binaural scenes as FLAC files
-[[file:deploy/online_simulator][deploy/online_simulator]] Code of the interactive floor plan
-[[file:production/impulse_responses][production/impulse_responses]] The IR-based sound production process
-[[file:production/raspberry][production/raspberry]] The self-resetting players used in the exhibition
-[[file:production/sonifications][production/sonifications]] The fictive and factual sonifications used in the narrative
+- [[file:deploy/binaural_tracks][deploy/binaural_tracks]] The finished binaural scenes as FLAC files
+- [[file:deploy/online_simulator][deploy/online_simulator]] Code of the interactive floor plan
+- [[file:production/impulse_responses][production/impulse_responses]] The IR-based sound production process
+- [[file:production/raspberry][production/raspberry]] The self-resetting players used in the exhibition
+- [[file:production/sonifications][production/sonifications]] The fictive and factual sonifications used in the narrative
 
 
 
