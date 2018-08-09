@@ -6,10 +6,6 @@ Besides recorded sounds (i.e. voices and noises) the project also makes use of s
 
 The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tiny tool written in Processing/Java using the Minim library. 
 
-# #+ATTR_HTML: :width 640
-# [[file:ise_measurements_micsetup.jpg]]
-#+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
-
 The sounds of the fictive sonification device discussed and presented in scene C (~ 4'00'' - 5'20'') have also been created using Processing and Minim in addition to the Fisica library, a Processing wrapper of JBox2D. The code is available in the folder [[file:materiality_of_data][materiality_of_data]] and offers a sine wave swarm synth based on a network of simulated mechanical springs. The tool allows for the configuration of arbitrary nodes and sonifies how their connections change in length. Various parameters can be adjusted in real-time using the following commands:
 
 #+BEGIN_EXAMPLE
