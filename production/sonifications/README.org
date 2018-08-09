@@ -1,8 +1,8 @@
-#+TITLE: Sound design notes of Sonic Epistemologies
+#+TITLE: Sonification notes of Sonic Epistemologies
 
 Besides recorded sounds (i.e. voices and noises) the project also makes use of synthesised sounds that have been freshly created or have been used from historic sources. 
 
-** Synthesised sounds
+** Fictive sounds and sonifications
 
 The sounds of the "[[file:listening_exercise][listening exercise]]" in scene B have been created with a tiny tool written in Processing/Java using the Minim library. 
 
@@ -44,7 +44,7 @@ EXITOR
 The sonification sounds heard in scene D and E have been created using the [[http://imtr.ircam.fr/imtr/CataRT][CatArt]] (Real-Time Corpus-Based Concatenative Synthesis) tool by IRCAM. Recordings of physically excited objects have been used as source material, chopped into grains and sorted according to their spectral brightness and loudness. 
 
 
-** Example of historic sonifications
+** Factual/historic sonifications
 
-The historic sonification examples in scene C (~ 1'00'' - 3'00'') are factually existing sounds of algorithmic sonifications recorded by W. Nijenhuis at Philips in Eindhoven while working on the "PASCAL" computer in the early 1960s. A media historic discussion of this can be found in Miyazaki, S. (2013). Algorhythmisiert. Eine Medienarchäologie digitaler Signale und (un)erhörter Effekte. Berlin: Kadmos Kulturverlag, p. 84ff.
+The historic sonification examples in scene C (~ 1'00'' - 3'00'') are factually existing sounds of algorithmic sonifications recorded by W. Nijenhuis at Philips in Eindhoven while working on the "PASCAL" computer in the early 1960s. A media historic discussion of this can be found in Miyazaki, Shintaro (2013). Algorhythmisiert. Eine Medienarchäologie digitaler Signale und (un)erhörter Effekte. Berlin: Kadmos Kulturverlag, p. 84ff.
 
