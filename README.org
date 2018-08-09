@@ -1,6 +1,8 @@
 #+TITLE: The Institute of Sonic Epistemologies
 
-Production notes and materials of a site-specific, binaural sound installation by [[http://www.ludwigzeller.de/projects/the-institute-of-sonic-epistemologies/][Ludwig Zeller]] (HGK Basel) and [[http://www.rumori.de/][Martin Rumori]] (Kunstuniversität Graz). The project is part of the IXDM research project “[[https://www.ixdm.ch/portfolio/experimental-data-aesthetics/][Experimental Data Aesthetics]]”.
+Production notes and materials of a binaural sound installation by [[http://www.ludwigzeller.de/projects/the-institute-of-sonic-epistemologies/][Ludwig Zeller]] (HGK Basel) and [[http://www.rumori.de/][Martin Rumori]] (Kunstuniversität Graz), created site-specifically for the basement of [[http://www.hek.ch][HeK Basel]]. The project is part of the IXDM research project “[[https://www.ixdm.ch/portfolio/experimental-data-aesthetics/][Experimental Data Aesthetics]]”.
+
+The immersive aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of [[http://rixc.org/en/acousticspace/][Acoustic Space Journal]].
 
 ** About the project
 
@@ -10,12 +12,21 @@ Our project ‘The Institute of Sonic Epistemologies’ is a Speculative Design 
 
 The projects departs from two notions of sonic epistemologies: Firstly, a utilitarian perspective on sound that is common in scientific data sonification and interaction design. In this regards, sound is appreciated for its specific capacity to inform insights in complex analytics that could benefit from its specific forms of aesthetics disclosure. And secondly, sound is understood from a fictional perspective as a way of relating to existing life-world experiences and transcending them by the means of multi-sensory storytelling. In regards to the latter, the project aims at exploring ways of seamlessly layering a fictive space on top of a physical space.
 
-The fictional aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of [[http://rixc.org/en/acousticspace/][Acoustic Space Journal]].
+The narrative of the project focuses on the fictive ‘The Institute of Sonic Epistemologies’, an academic place where students receive education as data analysts. Visually impaired people usually excel their sighted colleagues. The installation space is presented as a seminar room, where a lecturer conducts a workshop on sonification. The visitors of the installation are meant to sneak in as mainly unseen observers of the fictive workshop. Their role as actors in the narrative is manifested through being addressed by the head of the institute in the beginning and by one of the participants in the end of the listening sequence. 
 
+todo: link an image to the interactive floor plan
 
-*** Interactive floor plan 
+Five listening positions were fixed for the visitors of the installation. At each position, a headphone was suspended from the ceiling such that its orientation indicated the intended listening direction. Additionally, the positions and directions were marked by footprints on the floor. Positions suitable for sitting were also equipped with a chair. The positions were chosen to both support a certain dramaturgy and to exploit the effects of binaural rendering in terms of virtual sound source locations and affordance to immersion. The listening positions were located and assigned to the parts of a radio-play like narrative as follows: 
 
-Link to Gitlab pages
+A) Staircase outside the classroom, before the opened door. Waiting for the head of institute, finally welcoming introduction by her. 
+
+B) In the back of the classroom. Instructor introduces the workshop. Head of institute provides additional information by whispering close-by. 
+
+C) Front part of the classroom close to the left boundary, facing the instructor. He gives background information on the history and objectives of sonification. 
+
+D) In the middle of the classroom among the students during practical training. Students experiment, play examples and discuss with the instructor. 
+
+E) On the left boundary of the classroom facing backwards into the room. A student is talking to the listener about her motivation and experience in an informal conversation. In the background, workshop participations clear the workspace, pack their belongings and leave.
 
 
 ** About this repository
