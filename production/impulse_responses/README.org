@@ -291,7 +291,7 @@ $ for mic in kk dpa ortf; do cnt=2; for pos in b c d e; do \
 ** References
 
 #+HTML: <a name="Farina_2000" />
-- Farina 2000 :: Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique, AES Preprint 5093.
+- Farina 2000 :: [[http://pcfarina.eng.unipr.it/Public/Papers/134-AES00.PDF][Farina, Angelo: Simultaneous measurement of impulse response and distortion with a swept-sine technique, AES Preprint 5093.]]
 #+HTML: <a name="HollerwegerRumori_2013" />
-- Hollerweger & Rumori 2013 :: Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132.
+- Hollerweger & Rumori 2013 :: [[http://lac.linuxaudio.org/2013/papers/60.pdf][Hollerweger, Florian and Rumori, Martin: Production and Application of Room Impulse Responses for Multichannel Setups using FLOSS Tools, Proceedings of Linux Audio Conference 2013, pp. 125–132.]]
 
