@@ -1,20 +1,24 @@
 #+TITLE: The Institute of Sonic Epistemologies
 
-Production notes and materials of a binaural sound installation by [[http://www.ludwigzeller.de/projects/the-institute-of-sonic-epistemologies/][Ludwig Zeller]] (HGK Basel) and [[http://www.rumori.de/][Martin Rumori]] (Kunstuniversität Graz), created site-specifically for the basement of [[http://www.hek.ch][HeK Basel]]. The project is part of the IXDM research project “[[https://www.ixdm.ch/portfolio/experimental-data-aesthetics/][Experimental Data Aesthetics]]”.
+Production notes and materials of a binaural sound installation by [[http://www.ludwigzeller.de/projects/the-institute-of-sonic-epistemologies/][Ludwig Zeller]] (HGK Basel) and [[http://www.rumori.de/][Martin Rumori]] (Kunstuniversität Graz), created site-specifically for the basement of [[http://www.hek.ch][HeK Basel]]. The project is part of the IXDM research project /[[https://www.ixdm.ch/portfolio/experimental-data-aesthetics/][Experimental Data Aesthetics]]/.
 
-The immersive aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of [[http://rixc.org/en/acousticspace/][Acoustic Space Journal]].
+The immersive aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of /[[http://rixc.org/en/acousticspace/][Acoustic Space Journal]]/.
 
 ** About the project
 
 #+HTML: <a href="https://vimeo.com/238382412"><img src="ise_title.png" alt="The Institute of Sonic Epistemologies video title" width="640" /></a>
 
-Our project ‘The Institute of Sonic Epistemologies’ is a Speculative Design project that explores ways of immersion within non-existing life-worlds with a central focus on sound. Conceptually, it explores the idea that our visual ways of knowledge creation might only have gained their dominance due to processes of socialisation. The project is thus based on the following, speculative questions: What if visual strategies lost their dominance in scientific data analysis? And what if visually impaired people could therefore catch up with the non-blind in future information societies? 
+Our project /The Institute of Sonic Epistemologies/ is a Speculative Design project that explores ways of immersion within non-existing life-worlds with a central focus on sound. Conceptually, it explores the idea that our visual ways of knowledge creation might only have gained their dominance due to processes of socialisation. The project is thus based on the following, speculative questions: What if visual strategies lost their dominance in scientific data analysis? And what if visually impaired people could therefore catch up with the non-blind in future information societies? 
 
 The projects departs from two notions of sonic epistemologies: Firstly, a utilitarian perspective on sound that is common in scientific data sonification and interaction design. In this regards, sound is appreciated for its specific capacity to inform insights in complex analytics that could benefit from its specific forms of aesthetics disclosure. And secondly, sound is understood from a fictional perspective as a way of relating to existing life-world experiences and transcending them by the means of multi-sensory storytelling. In regards to the latter, the project aims at exploring ways of seamlessly layering a fictive space on top of a physical space.
 
-The narrative of the project focuses on the fictive ‘The Institute of Sonic Epistemologies’, an academic place where students receive education as data analysts. Visually impaired people usually excel their sighted colleagues. The installation space is presented as a seminar room, where a lecturer conducts a workshop on sonification. The visitors of the installation are meant to sneak in as mainly unseen observers of the fictive workshop. Their role as actors in the narrative is manifested through being addressed by the head of the institute in the beginning and by one of the participants in the end of the listening sequence. 
+The narrative of the project focuses on the fictive /Institute of Sonic Epistemologies/, an academic place where students receive education as data analysts. Visually impaired people usually excel their sighted colleagues. The installation space is presented as a seminar room, where a lecturer conducts a workshop on sonification. The visitors of the installation are meant to sneak in as mainly unseen observers of the fictive workshop. Their role as actors in the narrative is manifested through being addressed by the head of the institute in the beginning and by one of the participants in the end of the listening sequence. 
 
-todo: link an image to the interactive floor plan
+*** Spatial layout of the installation
+
+# #+ATTR_HTML: :width 640
+# [[file:production/ise_floor_plan.png]]
+#+HTML: <img src="production/ise_floor_plan.png" alt="Installation floor plan" width="640" />
 
 Five listening positions were fixed for the visitors of the installation. At each position, a headphone was suspended from the ceiling such that its orientation indicated the intended listening direction. Additionally, the positions and directions were marked by footprints on the floor. Positions suitable for sitting were also equipped with a chair. The positions were chosen to both support a certain dramaturgy and to exploit the effects of binaural rendering in terms of virtual sound source locations and affordance to immersion. The listening positions were located and assigned to the parts of a radio-play like narrative as follows: 
 
@@ -28,28 +32,15 @@ D) In the middle of the classroom among the students during practical training. 
 
 E) On the left boundary of the classroom facing backwards into the room. A student is talking to the listener about her motivation and experience in an informal conversation. In the background, workshop participations clear the workspace, pack their belongings and leave.
 
-
 ** About this repository
 
 This repository provides public information about the production steps that we took in order to create this site-specific, binaural sound installation. Furthermore, the IR impulses of the basement of HEK Basel and all source codes involved in the creation of the fictional sounds are also included and explained in this repository. It is intended as a starting point for further explorations and is therefore released open-source. 
 
 Some subfolders carry individual README files with further directions:
 
-
-- [[file:production/impulse_responses][production/impulse_responses]] The IR-based sound production process
-- [[file:production/raspberry][production/raspberry]] The self-resetting players used in the exhibition
-- [[file:production/sonifications][production/sonifications]] The fictive and factual sonifications used in the narrative
-- [[file:deploy/binaural_tracks][deploy/binaural_tracks]] The finished binaural scenes as FLAC files
-- [[file:deploy/online_simulator][deploy/online_simulator]] Code of the interactive floor plan
-
-
-
-
-
-
-
-
-
-
-
+- [[file:production/impulse_responses][production/impulse_responses]] :: The IR-based sound production process
+- [[file:production/raspberry][production/raspberry]] :: The self-resetting players used in the exhibition
+- [[file:production/sonifications][production/sonifications]] :: The fictive and factual sonifications used in the narrative
+- [[file:deploy/binaural_tracks][deploy/binaural_tracks]] :: The finished binaural scenes as FLAC files
+- [[file:deploy/online_simulator][deploy/online_simulator]] :: Code of the interactive floor plan
 

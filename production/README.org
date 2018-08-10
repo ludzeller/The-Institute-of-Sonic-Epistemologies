@@ -8,7 +8,7 @@ There are two major ways to produce binaural audio signals containing head-relat
 
 A dummy head microphone has been placed at the five intended listening locations sequentially.  For this method of production, the narrative scenes have to be staged in the exhibition space for direct recording.  In fact, this is the way many binaural radio plays were produced and partially still are today (see [[http://www.v-erdacht.de][(V)erdacht]] for an example).
 
-For /The Institute of Sonic Epistemologies,/ this on-site approach has been only used for spatially more complex but temporally less critical sonic elements, such as the ambience or most of the noises caused by the students when clearing the space.  Moving sounds have been recorded the same way, for example, the approaching steps in the staircase appearing in the first scene. 
+For /The Institute of Sonic Epistemologies/, this on-site approach has been only used for spatially more complex but temporally less critical sonic elements, such as the ambience or most of the noises caused by the students when clearing the space.  Moving sounds have been recorded the same way, for example, the approaching steps in the staircase appearing in the first scene. 
 
 *** Binaural rendering
 

@@ -14,13 +14,17 @@ Binaural Room Impulse Responses (BRIR) were captured in the exhibition venue usi
 # [[file:ise_measurements_micsetup.jpg]]
 #+HTML: <img src="ise_measurements_micsetup.jpg" alt="Measurement microphones setup" width="640" />
 
-Measurements were performed according to the swept sine method ([[#Farina_2000][Farina 2000]]).  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring (see [[floor plan]]).  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom).
+Measurements were performed according to the swept sine method ([[#Farina_2000][Farina 2000]]).  The sweep signal was played back by different kinds of loudspeakers placed at the respective positions of sound sources.  With economic and temporal resources in mind, a minimal yet flexible set of virtual sound source locations has been sketched for measuring.  These include positions of protagonists (1–6 representing a spatially distributed group of students, 7–8 the instructor, 11 the student in the closing scene, 12 and 13 the head of the institute) as well as loudspeakers that play back sonification examples (9–10 single loudspeakers on desks, 15–16 stereo system in classroom):
+
+# #+ATTR_HTML: :width 640
+# [[file:../ise_floor_plan.png]]
+#+HTML: <img src="../ise_floor_plan.png" alt="Installation floor plan" width="640" />
+
+With one exception, each source location was equipped with a dedicated loudspeaker.  Thus, all impulse responses for a certain listening position could be captured in one automated series of measurements without the need of repositioning speakers intermediately.  Only source locations 12 and 13 shared the same speaker, which therefore had to be moved once after having measured listening position A since in the other scenes (B–E) location 13 is never used.
 
 # #+ATTR_HTML: :width 640
 # [[file:ise_measurements_speakersetup.jpg]]
 #+HTML: <img src="ise_measurements_speakersetup.jpg" alt="Measurement loudspeaker setup" width="640" />
-
-With one exception, each source location was equipped with a dedicated loudspeaker.  Thus, all impulse responses for a certain listening position could be captured in one automated series of measurements without the need of repositioning speakers intermediately.  Only source locations 12 and 13 shared the same speaker, which therefore had to be moved once after having measured listening position A since in the other scenes (B–E) location 13 is never used.
 
 In total, 70 binaural stereo impulse response pairs have been measured, organised in a matrix of 14 source locations by 5 listening positions.  The measurements were carried out using a customised version of the libre software package Aliki (see [[#HollerwegerRumori_2013][Hollerweger & Rumori 2013]] for a description of customisations). The automated process was adopted from earlier projects with one of the authors’ involvement, including the post-processing toolchain.
 
@@ -32,7 +36,7 @@ In total, 70 binaural stereo impulse response pairs have been measured, organise
 3 microphone pairs (kk, dpa, ortf)
 #+END_EXAMPLE
 
-[[file:ise_floor_plan.svg][Floor plan]]
+[[file:../ise_floor_plan.svg][Floor plan]]
 
 Find detailed information below under [[#measurement_procedure][Measurement procedure]].
 
