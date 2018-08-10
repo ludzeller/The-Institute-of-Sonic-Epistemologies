@@ -34,7 +34,7 @@ REMOVE
 
 PHYSICS
 - adjust spring damping: press 'w' and move mouse horizontally
-- adjust spring frequency: press '1' and move mouse horizontally
+- adjust spring frequency: press 'q' and move mouse horizontally
 - adjust spring length: press 'e' and move mouse horizontally
 - trigger showing of physics parameters: press 'h'
 
