@@ -1,0 +1,11 @@
+#+TITLE: The Institute of Sonic Epistemologies Online Simulator
+
+This is an online simulator for the installation, which allows an interactive access to the binaural audio tracks based on the floor plan of the installation.
+
+# #+ATTR_HTML: :width 640
+# [[file:img/]]sonic_epist_space_margins_ed2.png
+#+HTML: <img src="img/]]sonic_epist_space_margins_ed2.png" alt="Installation simulator floor plan" width="640" />
+
+The simulator consists of a simple HTML page with some Javascript functionality.  The simulator found here was conceived for a Raspberry Pi with a small touchscreen of 480x320 pixels resolution, to be used as a kiosk system in exhibitions.
+
+An adapted desktop version running in your browser can be found at [[https://rumori.iem.sh/The_Institute_of_Sonic_Epistemologies/ise_simulator_desktop.html]].

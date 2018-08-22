@@ -9,4 +9,4 @@ xset s off -dpms
 amixer set Headphone 18
 
 # start browser fullscreen
-cd /home/pi/se && chromium-browser --start-fullscreen --kiosk sonic_epistemologies.html
+cd /home/pi/se && chromium-browser --start-fullscreen --kiosk ise_simulator.html
