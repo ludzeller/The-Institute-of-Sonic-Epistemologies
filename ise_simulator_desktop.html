@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15" />
+<title>The Institute of Sonic Epistemologies Online Simulator</title>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.maphilight.min.js"></script>
+</head>
+
+<body>
+  <h1>The Institute of Sonic Epistemologies</h1>
+  <h2>Online Simulator</h2>
+
+  <p>
+    This is an online simulator for a binaural sound installation by
+    Ludwig Zeller and Martin Rumori.  It has been originally developed
+    for use on a Raspberry Pi with a touchscreen of 480x320 pixels.
+    This is a slightly adapted desktop version. Javascript support
+    required.</p>
+
+  <p>
+    Please find further information on the background of the
+    installation and its technical realisation
+    at <a href="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies">https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies</a>.</p>
+
+  <audio id="snd_se_a" onended="enterNext(1)">
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_A.ogg" type="audio/ogg" preload="metadata" />
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_A.mp3" type="audio/mpeg" preload="metadata" />
+    PANIC: Your browser does not support the audio tag.
+</audio>
+<audio id="snd_se_b" onended="enterNext(2)">
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_B.ogg" type="audio/ogg" preload="metadata" />
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_B.mp3" type="audio/mpeg" preload="metadata" />
+    PANIC: Your browser does not support the audio tag.
+</audio>
+<audio id="snd_se_c" onended="enterNext(3)">
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_C.ogg" type="audio/ogg" preload="metadata" />
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_C.mp3" type="audio/mpeg" preload="metadata" />
+    PANIC: Your browser does not support the audio tag.
+</audio>
+<audio id="snd_se_d" onended="enterNext(4)">
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_D.ogg" type="audio/ogg" preload="metadata" />
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_D.mp3" type="audio/mpeg" preload="metadata" />
+    PANIC: Your browser does not support the audio tag.
+</audio>
+<audio id="snd_se_e" onended="enterIdle()">
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_E.ogg" type="audio/ogg" preload="metadata" />
+    <source src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/se_snd/sonic_epist_E.mp3" type="audio/mpeg" preload="metadata" />
+    PANIC: Your browser does not support the audio tag.
+</audio>
+
+<img id="img_se" style="object-fit:contain;" src="https://git.iem.at/rumori/The_Institute_of_Sonic_Epistemologies/raw/master/deploy/online_simulator/img/sonic_epist_space_margins_ed2.png" width="480" height="320" alt="Sonic Epistemologies" usemap="#se_map" ondragstart="event.preventDefault()" />
+
+<map name="se_map">
+  <area id="ar_se_a" onclick="areaClicked(event, 0)" ondragstart="event.preventDefault()" shape="circle" coords="367,279,24" href="" alt="Sonic Epistemologies A" />
+  <area id="ar_se_b" onclick="areaClicked(event, 1)" ondragstart="event.preventDefault()" shape="circle" coords="332,162,24" href="" alt="Sonic Epistemologies B" />
+  <area id="ar_se_c" onclick="areaClicked(event, 2)" ondragstart="event.preventDefault()" shape="circle" coords="102,186,24" href="" alt="Sonic Epistemologies C" />
+  <area id="ar_se_d" onclick="areaClicked(event, 3)" ondragstart="event.preventDefault()" shape="circle" coords="225,124,24" href="" alt="Sonic Epistemologies D" />
+  <area id="ar_se_e" onclick="areaClicked(event, 4)" ondragstart="event.preventDefault()" shape="circle" coords="99,40,24" href="" alt="Sonic Epistemologies E" />
+</map>
+
+<script type="text/javascript">
+
+const ACT_COLOR = 'FF0000';
+const IDLE_COLOR = '00FF00';
+const CLICK_TIMEOUT = 120000;
+
+var snd_se = [ document.getElementById('snd_se_a'),
+    		   document.getElementById('snd_se_b'),
+    		   document.getElementById('snd_se_c'),
+    		   document.getElementById('snd_se_d'),
+    		   document.getElementById('snd_se_e') ];
+var img_se = $("#img_se");
+var ar_se = [ $("#ar_se_a"), $("#ar_se_b"), $("#ar_se_c"), $("#ar_se_d"), $("#ar_se_e") ];
+var lastClicked = Date.now();
+
+img_se.maphilight({ fillColor: IDLE_COLOR, strokeColor: IDLE_COLOR, fill: true, alwaysOn: true });
+
+// document.body.style.cursor = 'none';
+// document.getElementById('img_se').style.cursor = 'none';
+// document.getElementById('ar_se_a').style.cursor = 'none';
+// document.getElementById('ar_se_b').style.cursor = 'none';
+// document.getElementById('ar_se_c').style.cursor = 'none';
+// document.getElementById('ar_se_d').style.cursor = 'none';
+// document.getElementById('ar_se_e').style.cursor = 'none';
+// $("body").css("overflow", "hidden");
+
+// set area to active state
+function setActive (index) {
+    ar_se[index].data('maphilight', {'fillColor': ACT_COLOR, 'strokeColor': ACT_COLOR}).trigger('alwaysOn.maphilight');
+};
+
+// set area to idle state
+function setIdle (index) {
+    ar_se[index].data('maphilight', {'fillColor': IDLE_COLOR, 'strokeColor': IDLE_COLOR}).trigger('alwaysOn.maphilight');
+};
+
+// audio switch function
+function switchAudio (act) {
+    var pause = [ 0, 1, 2, 3, 4 ];
+    pause.splice(act, 1);
+    // pause others
+    for (i = 0; i < 4; ++i) {
+	snd_se[pause[i]].pause();
+	setIdle(pause[i]);
+    };
+    // toggle active
+    if (snd_se[act].paused) {
+	snd_se[act].play();
+	setActive(act);
+    } else {
+	snd_se[act].pause();
+	setIdle(act);
+    };
+};
+
+// reset audio players to start position
+function resetAudio () {
+    for (i = 0; i < 5; ++i) {
+	snd_se[i].currentTime = 0;
+    };
+};
+
+// return to idle state after last track
+function enterIdle () {
+    resetAudio();
+    setIdle(4);
+};
+
+// switch to next track
+function enterNext (next) {
+    // reset next in case it's not at beginning
+    snd_se[next].currentTime = 0;
+    switchAudio(next);
+};
+
+// clicked area frontend function (check&reset)
+function areaClicked (e, act) {
+    var current = Date.now();
+    e.preventDefault();
+    // reset if timeout was reached or all players are going to be paused
+    if (current - lastClicked > CLICK_TIMEOUT || ! snd_se[act].paused) {
+	resetAudio();
+    };
+    switchAudio(act);
+    lastClicked = current;
+};
+
+// go fullscreen
+function requestFullScreen(el) {
+    // Supports most browsers and their versions.
+    var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen || el.msRequestFullscreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(el);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        };
+    };
+    return false;
+};
+
+</script>
+
+<!-- <button onclick="requestFullScreen(document.body)">fullscreen</button> -->
+
+</body>
+</html>
