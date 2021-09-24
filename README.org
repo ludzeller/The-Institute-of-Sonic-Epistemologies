@@ -4,6 +4,11 @@ Production notes and materials of a binaural sound installation by [[http://www.
 
 The immersive aesthetics of the project is fully discussed in the paper “The Institute of Sonic Epistemologies. Life-world Fiction within Augmented Auditory Space” by Ludwig Zeller and Martin Rumori, available in issue 17 of /[[http://rixc.org/en/acousticspace/][Acoustic Space Journal]]/.
 
+** Main project resources
+
+- [[https://www.ludwigzeller.net/projects/the-institute-of-sonic-epistemologies/]] :: Project website
+- [[https://zenodo.org/record/5494687]] :: The finished binaural scenes as FLAC files
+
 ** About the project
 
 #+HTML: <a href="https://vimeo.com/238382412"><img src="ise_title.png" alt="The Institute of Sonic Epistemologies video title" width="640" /></a>
@@ -41,6 +46,5 @@ Some subfolders carry individual README files with further directions:
 - [[file:production/impulse_responses][production/impulse_responses]] :: The IR-based sound production process
 - [[file:production/raspberry][production/raspberry]] :: The self-resetting players used in the exhibition
 - [[file:production/sonifications][production/sonifications]] :: The fictive and factual sonifications used in the narrative
-- [[file:deploy/binaural_tracks][deploy/binaural_tracks]] :: The finished binaural scenes as FLAC files
 - [[file:deploy/online_simulator][deploy/online_simulator]] :: Code of the interactive floor plan
 
